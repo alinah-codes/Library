@@ -9,7 +9,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "")
+@Table(name = "categories")
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,5 +18,5 @@ public class Category {
     private String name;
 
     @OneToMany(mappedBy = "category")
-    private List<Category> categories;
+    private List<Book> books;
 }

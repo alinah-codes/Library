@@ -1,19 +1,211 @@
 databaseChangeLog:
   - changeSet:
       id: 001_create_tables
-      author: admin
+      author: A-K-I-V-I
       changes:
         - createTable:
-            tableName: users
+            tableName: roles
             columns:
               - column:
-                  name: email
-                  type: varchar(255)
+                  name: id
+                  type: long
+                  autoIncrement: true
                   constraints:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: password
+                  name: role_name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: full_name
                   type: varchar(255)
                   constraints:
                     nullable: false
+              - column:
+                  name: address
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: passport_number
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: ticket_number
+                  type: varchar(250)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: password
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: role_id
+                  type: long
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: users
+            baseColumnNames: role_id
+            constraintName: fk_role_id_users
+            referencedTableName: roles
+            referencedColumnNames: id
+
+        - createTable:
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+
+        - createTable:
+            tableName: books
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: author
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: year
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: category_id
+                  type: long
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(1000)
+        - addForeignKeyConstraint:
+            baseTableName: books
+            baseColumnNames: category_id
+            constraintName: fk_category_id_books
+            referencedTableName: categories
+            referencedColumnNames: id
+
+        - createTable:
+            tableName: images
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: file_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: file_path
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: book_id
+                  type: long
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: images
+            baseColumnNames: book_id
+            constraintName: fk_book_id_images
+            referencedTableName: books
+            referencedColumnNames: id
+            onDelete: CASCADE
+        - createTable:
+            tableName: request
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: long
+                  constraints:
+                    nullable: false
+              - column:
+                  name: book_id
+                  type: long
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: return_date
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: real_return_date
+                  type: date
+                  constraints:
+                    nullable: true
+              - column:
+                  name: status
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: request
+            baseColumnNames: user_id
+            constraintName: fk_user_id_request
+            referencedTableName: users
+            referencedColumnNames: id
+            onDelete: CASCADE
+        - addForeignKeyConstraint:
+            baseTableName: request
+            baseColumnNames: book_id
+            constraintName: fk_book_id_request
+            referencedTableName: books
+            referencedColumnNames: id
+            onDelete: CASCADE

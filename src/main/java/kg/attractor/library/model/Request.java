@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
-@Table(name = "")
+@Table(name = "request")
 public class Request {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +24,9 @@ public class Request {
     private Book book;
 
     private LocalDate created;
+    @Column(name = "return_date")
     private LocalDate returnDate;
+    @Column(name = "real_return_date")
     private LocalDate realReturnDate;
 
     @Enumerated(EnumType.STRING)

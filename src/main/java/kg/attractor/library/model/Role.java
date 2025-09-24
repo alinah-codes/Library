@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "")
+@Table(name = "roles")
 public class Role {
     @Id
     private long id;
@@ -20,5 +20,5 @@ public class Role {
     private String roleName;
 
     @OneToMany(mappedBy = "role")
-    private List<Role> roles;
+    private List<User> users;
 }
