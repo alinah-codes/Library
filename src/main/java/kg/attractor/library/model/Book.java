@@ -16,7 +16,8 @@ public class Book {
 
     private String title;
     private String author;
-    private int year;
+    @Column(name = "release_year")
+    private int releaseYear;
 
     @ManyToOne
     @JoinColumn(name = "category_id")

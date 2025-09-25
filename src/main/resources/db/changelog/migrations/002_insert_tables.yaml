@@ -92,7 +92,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Война и мир" }
               - column: { name: author, value: "Лев Толстой" }
-              - column: { name: year, valueNumeric: 1869 }
+              - column: { name: release_year, valueNumeric: 1869 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "Исторический роман о войне 1812 года и судьбах русского общества." }
         - insert:
@@ -100,7 +100,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Преступление и наказание" }
               - column: { name: author, value: "Фёдор Достоевский" }
-              - column: { name: year, valueNumeric: 1866 }
+              - column: { name: release_year, valueNumeric: 1866 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "История студента Раскольникова, совершившего убийство ради идеи." }
         - insert:
@@ -108,7 +108,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Анна Каренина" }
               - column: { name: author, value: "Лев Толстой" }
-              - column: { name: year, valueNumeric: 1877 }
+              - column: { name: release_year, valueNumeric: 1877 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "Трагическая история любви в российском обществе XIX века." }
         - insert:
@@ -116,7 +116,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Идиот" }
               - column: { name: author, value: "Фёдор Достоевский" }
-              - column: { name: year, valueNumeric: 1869 }
+              - column: { name: release_year, valueNumeric: 1869 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "История князя Мышкина, символа доброты и честности." }
         - insert:
@@ -124,7 +124,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Мастер и Маргарита" }
               - column: { name: author, value: "Михаил Булгаков" }
-              - column: { name: year, valueNumeric: 1967 }
+              - column: { name: release_year, valueNumeric: 1967 }
               - column: { name: category_id, valueNumeric: 2 }
               - column: { name: description, value: "Фантастический роман о добре и зле, сатире и любви." }
         - insert:
@@ -132,7 +132,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Доктор Живаго" }
               - column: { name: author, value: "Борис Пастернак" }
-              - column: { name: year, valueNumeric: 1957 }
+              - column: { name: release_year, valueNumeric: 1957 }
               - column: { name: category_id, valueNumeric: 2 }
               - column: { name: description, value: "История врача и поэта Живаго во время революции и гражданской войны." }
         - insert:
@@ -140,7 +140,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Белая гвардия" }
               - column: { name: author, value: "Михаил Булгаков" }
-              - column: { name: year, valueNumeric: 1925 }
+              - column: { name: release_year, valueNumeric: 1925 }
               - column: { name: category_id, valueNumeric: 2 }
               - column: { name: description, value: "Роман о судьбах интеллигенции в годы гражданской войны." }
         - insert:
@@ -148,7 +148,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Собачье сердце" }
               - column: { name: author, value: "Михаил Булгаков" }
-              - column: { name: year, valueNumeric: 1925 }
+              - column: { name: release_year, valueNumeric: 1925 }
               - column: { name: category_id, valueNumeric: 2 }
               - column: { name: description, value: "Сатирическая повесть о неудачном эксперименте профессора Преображенского." }
         - insert:
@@ -156,7 +156,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "1984" }
               - column: { name: author, value: "Джордж Оруэлл" }
-              - column: { name: year, valueNumeric: 1949 }
+              - column: { name: release_year, valueNumeric: 1949 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Антиутопия о тоталитарном обществе под надзором Большого Брата." }
         - insert:
@@ -164,7 +164,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "О дивный новый мир" }
               - column: { name: author, value: "Олдос Хаксли" }
-              - column: { name: year, valueNumeric: 1932 }
+              - column: { name: release_year, valueNumeric: 1932 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Антиутопия о мире потребления, контроле и стандартизации." }
         - insert:
@@ -172,7 +172,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Марсианин" }
               - column: { name: author, value: "Энди Вейер" }
-              - column: { name: year, valueNumeric: 2011 }
+              - column: { name: release_year, valueNumeric: 2011 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "История астронавта, оставшегося один на Марсе." }
         - insert:
@@ -180,7 +180,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Дюна" }
               - column: { name: author, value: "Фрэнк Герберт" }
-              - column: { name: year, valueNumeric: 1965 }
+              - column: { name: release_year, valueNumeric: 1965 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Эпическая сага о пустынной планете Арракис и её ресурсах." }
         - insert:
@@ -188,7 +188,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Гарри Поттер и философский камень" }
               - column: { name: author, value: "Дж. К. Роулинг" }
-              - column: { name: year, valueNumeric: 1997 }
+              - column: { name: release_year, valueNumeric: 1997 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Первая книга о юном волшебнике Гарри Поттере." }
         - insert:
@@ -196,7 +196,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Гарри Поттер и тайная комната" }
               - column: { name: author, value: "Дж. К. Роулинг" }
-              - column: { name: year, valueNumeric: 1998 }
+              - column: { name: release_year, valueNumeric: 1998 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Вторая книга о Гарри Поттере и тайнах Хогвартса." }
         - insert:
@@ -204,7 +204,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Шерлок Холмс: Этюд в багровых тонах" }
               - column: { name: author, value: "Артур Конан Дойл" }
-              - column: { name: year, valueNumeric: 1887 }
+              - column: { name: release_year, valueNumeric: 1887 }
               - column: { name: category_id, valueNumeric: 4 }
               - column: { name: description, value: "Первая история о Шерлоке Холмсе и докторе Ватсоне." }
         - insert:
@@ -212,7 +212,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Собака Баскервилей" }
               - column: { name: author, value: "Артур Конан Дойл" }
-              - column: { name: year, valueNumeric: 1902 }
+              - column: { name: release_year, valueNumeric: 1902 }
               - column: { name: category_id, valueNumeric: 4 }
               - column: { name: description, value: "Одно из самых известных расследований Шерлока Холмса." }
         - insert:
@@ -220,7 +220,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Десять негритят" }
               - column: { name: author, value: "Агата Кристи" }
-              - column: { name: year, valueNumeric: 1939 }
+              - column: { name: release_year, valueNumeric: 1939 }
               - column: { name: category_id, valueNumeric: 4 }
               - column: { name: description, value: "Детективная история о таинственных убийствах на острове." }
         - insert:
@@ -228,7 +228,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Убийство в Восточном экспрессе" }
               - column: { name: author, value: "Агата Кристи" }
-              - column: { name: year, valueNumeric: 1934 }
+              - column: { name: release_year, valueNumeric: 1934 }
               - column: { name: category_id, valueNumeric: 4 }
               - column: { name: description, value: "Расследование Эркюля Пуаро в роскошном поезде." }
         - insert:
@@ -236,7 +236,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Трое в лодке, не считая собаки" }
               - column: { name: author, value: "Джером К. Джером" }
-              - column: { name: year, valueNumeric: 1889 }
+              - column: { name: release_year, valueNumeric: 1889 }
               - column: { name: category_id, valueNumeric: 5 }
               - column: { name: description, value: "Юмористическая повесть о путешествии трёх друзей по Темзе." }
         - insert:
@@ -244,7 +244,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Прощай, оружие!" }
               - column: { name: author, value: "Эрнест Хемингуэй" }
-              - column: { name: year, valueNumeric: 1929 }
+              - column: { name: release_year, valueNumeric: 1929 }
               - column: { name: category_id, valueNumeric: 5 }
               - column: { name: description, value: "История любви на фоне Первой мировой войны." }
         - insert:
@@ -252,7 +252,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Старик и море" }
               - column: { name: author, value: "Эрнест Хемингуэй" }
-              - column: { name: year, valueNumeric: 1952 }
+              - column: { name: release_year, valueNumeric: 1952 }
               - column: { name: category_id, valueNumeric: 5 }
               - column: { name: description, value: "Притча о борьбе рыбака со старой рыбой и судьбой." }
         - insert:
@@ -260,7 +260,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Фауст" }
               - column: { name: author, value: "Иоганн Вольфганг Гёте" }
-              - column: { name: year, valueNumeric: 1808 }
+              - column: { name: release_year, valueNumeric: 1808 }
               - column: { name: category_id, valueNumeric: 5 }
               - column: { name: description, value: "Трагедия о сделке учёного с дьяволом ради знаний и удовольствий." }
         - insert:
@@ -268,7 +268,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Отцы и дети" }
               - column: { name: author, value: "Иван Тургенев" }
-              - column: { name: year, valueNumeric: 1862 }
+              - column: { name: release_year, valueNumeric: 1862 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "Классический роман о конфликте поколений." }
         - insert:
@@ -276,7 +276,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Обломов" }
               - column: { name: author, value: "Иван Гончаров" }
-              - column: { name: year, valueNumeric: 1859 }
+              - column: { name: release_year, valueNumeric: 1859 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "Роман о ленивом мечтателе Илье Обломове." }
         - insert:
@@ -284,7 +284,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Тихий Дон" }
               - column: { name: author, value: "Михаил Шолохов" }
-              - column: { name: year, valueNumeric: 1940 }
+              - column: { name: release_year, valueNumeric: 1940 }
               - column: { name: category_id, valueNumeric: 1 }
               - column: { name: description, value: "Эпопея о донских казаках в годы революции и войны." }
         - insert:
@@ -292,7 +292,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Чевенгур" }
               - column: { name: author, value: "Андрей Платонов" }
-              - column: { name: year, valueNumeric: 1929 }
+              - column: { name: release_year, valueNumeric: 1929 }
               - column: { name: category_id, valueNumeric: 2 }
               - column: { name: description, value: "Философский роман о поиске утопии и крахе идеалов." }
         - insert:
@@ -300,7 +300,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Мы" }
               - column: { name: author, value: "Евгений Замятин" }
-              - column: { name: year, valueNumeric: 1924 }
+              - column: { name: release_year, valueNumeric: 1924 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Антиутопия о будущем тоталитарного общества." }
         - insert:
@@ -308,7 +308,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Пикник на обочине" }
               - column: { name: author, value: "Аркадий и Борис Стругацкие" }
-              - column: { name: year, valueNumeric: 1972 }
+              - column: { name: release_year, valueNumeric: 1972 }
               - column: { name: category_id, valueNumeric: 3 }
               - column: { name: description, value: "Фантастическая повесть о загадочной Зоне и сталкерах." }
         - insert:
@@ -316,7 +316,7 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Жизнь и судьба" }
               - column: { name: author, value: "Василий Гроссман" }
-              - column: { name: year, valueNumeric: 1959 }
+              - column: { name: release_year, valueNumeric: 1959 }
               - column: { name: category_id, valueNumeric: 5 }
               - column: { name: description, value: "Эпопея о Второй мировой войне и судьбах людей." }
         - insert:
@@ -324,6 +324,199 @@ databaseChangeLog:
             columns:
               - column: { name: title, value: "Ревизор" }
               - column: { name: author, value: "Николай Гоголь" }
-              - column: { name: year, valueNumeric: 1836 }
+              - column: { name: release_year, valueNumeric: 1836 }
               - column: { name: category_id, valueNumeric: 5 }
               - column: { name: description, value: "Сатирическая пьеса о чиновниках и самозванце." }
+
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book1.jpg" }
+              - column: { name: file_path, value: "uploads/books/book1.jpg" }
+              - column: { name: book_id, valueNumeric: 1 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book2.jpg" }
+              - column: { name: file_path, value: "uploads/books/book2.jpg" }
+              - column: { name: book_id, valueNumeric: 2 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book3.jpg" }
+              - column: { name: file_path, value: "uploads/books/book3.jpg" }
+              - column: { name: book_id, valueNumeric: 3 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book4.jpg" }
+              - column: { name: file_path, value: "uploads/books/book4.jpg" }
+              - column: { name: book_id, valueNumeric: 4 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book5.jpg" }
+              - column: { name: file_path, value: "uploads/books/book5.jpg" }
+              - column: { name: book_id, valueNumeric: 5 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book4.jpg" }
+              - column: { name: file_path, value: "uploads/books/book4.jpg" }
+              - column: { name: book_id, valueNumeric: 4 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book5.jpg" }
+              - column: { name: file_path, value: "uploads/books/book5.jpg" }
+              - column: { name: book_id, valueNumeric: 5 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book6.jpg" }
+              - column: { name: file_path, value: "uploads/books/book6.jpg" }
+              - column: { name: book_id, valueNumeric: 6 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book7.jpg" }
+              - column: { name: file_path, value: "uploads/books/book7.jpg" }
+              - column: { name: book_id, valueNumeric: 7 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book8.jpg" }
+              - column: { name: file_path, value: "uploads/books/book8.jpg" }
+              - column: { name: book_id, valueNumeric: 8 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book9.jpg" }
+              - column: { name: file_path, value: "uploads/books/book9.jpg" }
+              - column: { name: book_id, valueNumeric: 9 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book10.jpg" }
+              - column: { name: file_path, value: "uploads/books/book10.jpg" }
+              - column: { name: book_id, valueNumeric: 10 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book11.jpg" }
+              - column: { name: file_path, value: "uploads/books/book11.jpg" }
+              - column: { name: book_id, valueNumeric: 11 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book12.jpg" }
+              - column: { name: file_path, value: "uploads/books/book12.jpg" }
+              - column: { name: book_id, valueNumeric: 12 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book13.jpg" }
+              - column: { name: file_path, value: "uploads/books/book13.jpg" }
+              - column: { name: book_id, valueNumeric: 13 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book14.jpg" }
+              - column: { name: file_path, value: "uploads/books/book14.jpg" }
+              - column: { name: book_id, valueNumeric: 14 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book15.jpg" }
+              - column: { name: file_path, value: "uploads/books/book15.jpg" }
+              - column: { name: book_id, valueNumeric: 15 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book16.jpg" }
+              - column: { name: file_path, value: "uploads/books/book16.jpg" }
+              - column: { name: book_id, valueNumeric: 16 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book17.jpg" }
+              - column: { name: file_path, value: "uploads/books/book17.jpg" }
+              - column: { name: book_id, valueNumeric: 17 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book18.jpg" }
+              - column: { name: file_path, value: "uploads/books/book18.jpg" }
+              - column: { name: book_id, valueNumeric: 18 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book19.jpg" }
+              - column: { name: file_path, value: "uploads/books/book19.jpg" }
+              - column: { name: book_id, valueNumeric: 19 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book20.jpg" }
+              - column: { name: file_path, value: "uploads/books/book20.jpg" }
+              - column: { name: book_id, valueNumeric: 20 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book21.jpg" }
+              - column: { name: file_path, value: "uploads/books/book21.jpg" }
+              - column: { name: book_id, valueNumeric: 21 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book22.jpg" }
+              - column: { name: file_path, value: "uploads/books/book22.jpg" }
+              - column: { name: book_id, valueNumeric: 22 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book23.jpg" }
+              - column: { name: file_path, value: "uploads/books/book23.jpg" }
+              - column: { name: book_id, valueNumeric: 23 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book24.jpg" }
+              - column: { name: file_path, value: "uploads/books/book24.jpg" }
+              - column: { name: book_id, valueNumeric: 24 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book25.jpg" }
+              - column: { name: file_path, value: "uploads/books/book25.jpg" }
+              - column: { name: book_id, valueNumeric: 25 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book26.jpg" }
+              - column: { name: file_path, value: "uploads/books/book26.jpg" }
+              - column: { name: book_id, valueNumeric: 26 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book27.jpg" }
+              - column: { name: file_path, value: "uploads/books/book27.jpg" }
+              - column: { name: book_id, valueNumeric: 27 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book28.jpg" }
+              - column: { name: file_path, value: "uploads/books/book28.jpg" }
+              - column: { name: book_id, valueNumeric: 28 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book29.jpg" }
+              - column: { name: file_path, value: "uploads/books/book29.jpg" }
+              - column: { name: book_id, valueNumeric: 29 }
+        - insert:
+            tableName: images
+            columns:
+              - column: { name: file_name, value: "book30.jpg" }
+              - column: { name: file_path, value: "uploads/books/book30.jpg" }
+              - column: { name: book_id, valueNumeric: 30 }

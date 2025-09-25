@@ -21,35 +21,15 @@
     <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Library</a>
+            <a class="navbar-brand" href="/">Литература</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="nav-link" href="/">Мои книги</a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Логин</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Язык
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/?lang=ru">Русский</a></li>
-                            <li><a class="dropdown-item" href="/?lang=en"> Английский</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Поиск</button>
-                </form>
             </div>
 
 <#--            <#assign known = SPRING_SECURITY_CONTEXT?? >-->
@@ -73,20 +53,20 @@
 <#--                </#if>-->
 <#--            <#else>-->
                 <a href="/login"
-                   class="btn btn-outline-info m-2">Login</a>
+                   class="btn btn-outline-info m-2">Авторизация</a>
                 <a href="/auth/register"
-                   class="btn btn-outline-info m-2">Register</a>
+                   class="btn btn-outline-info m-2">Регистрация</a>
 <#--            </#if>-->
 
         </div>
     </nav>
 
 
-    <div class="container">
+    <div>
         <#nested spring>
     </div>
     </body>
 
     </html>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </#macro>
