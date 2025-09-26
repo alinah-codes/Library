@@ -29,7 +29,7 @@
             <!-- Дата возврата -->
             <div class="mb-3">
                 <label for="returnDate" class="form-label">Дата возврата</label>
-                <input type="date" name="returnDate" >
+                <input type="date" name="returnDate" required >
             </div>
 
             <!-- Кнопка -->
