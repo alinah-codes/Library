@@ -10,4 +10,6 @@ public interface BookService {
     Page<Book> findAll(Pageable pageable);
 
     Page<Book> getBooksByCategoryId(long categoryID, Pageable pageable);
+
+    Book findById(Long id);
 }

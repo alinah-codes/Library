@@ -8,8 +8,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 @RequiredArgsConstructor
 public class BookServiceImpl implements BookService {
@@ -23,5 +21,10 @@ public class BookServiceImpl implements BookService {
     @Override
     public Page<Book> getBooksByCategoryId(long categoryID, Pageable pageable) {
         return bookRepository.findByCategory_Id(categoryID, pageable);
+    }
+
+    @Override
+    public Book findById(Long id) {
+        return bookRepository.findById(id).orElse(null);
     }
 }

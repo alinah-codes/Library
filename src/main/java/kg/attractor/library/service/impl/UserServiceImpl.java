@@ -1,6 +1,6 @@
 package kg.attractor.library.service.impl;
 import kg.attractor.library.dto.UserDto;
-import kg.attractor.library.model.Role;
+import kg.attractor.library.exeptions.UserNotFoundException;
 import kg.attractor.library.model.User;
 import kg.attractor.library.repository.RoleRepository;
 import kg.attractor.library.repository.UserRepository;
@@ -62,5 +62,11 @@ public class UserServiceImpl implements UserService {
     private static String generateTicketNumber() {
         int number = 10000 + random.nextInt(90000);
         return "TICKET-" + number;
+    }
+
+    @Override
+    public User findByPassportNumber(String passportNumber) {
+        return userRepository.findByPassportNumber(passportNumber)
+                .orElseThrow(UserNotFoundException::new);
     }
 }

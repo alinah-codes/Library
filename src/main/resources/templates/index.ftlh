@@ -48,7 +48,15 @@
                             <h5 class="card-title">${book.author}</h5>
                             <p class="card-text">${book.description}</p>
                         </div>
-                        <a href="#" class="btn btn-primary w-100">Получить</a>
+                        <#if userRequests?? && userRequests[book.id?string]??>
+                            <div class="alert alert-info w-100">
+                                Дата возврата: ${userRequests[book.id?string]?date("yyyy-MM-dd")?string("dd.MM.yyyy")}
+                            </div>
+                        <#else>
+                            <a href="/request/${book.id}" class="btn btn-primary w-100">Получить</a>
+                        </#if>
+
+
                     </div>
                 </div>
 

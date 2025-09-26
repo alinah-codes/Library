@@ -17,15 +17,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping()
 @RequiredArgsConstructor
 public class MainController {
-    private final MainService mainService;
-
-
     @GetMapping()
     public String index() {
-
         return "redirect:/books";
 
     }
-
-
 }
