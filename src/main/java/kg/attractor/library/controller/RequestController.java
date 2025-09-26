@@ -65,4 +65,11 @@ public class RequestController {
         }
     }
 
+    @PostMapping("return/{bookId}")
+    public String returnRequest(@PathVariable Long bookId, Authentication auth) {
+        User user = userService.findByPassportNumber(auth.getName());
+        requestService.returnBook(user, bookId);
+        return "redirect:/profile";
+    }
+
 }

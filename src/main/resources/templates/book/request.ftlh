@@ -29,7 +29,7 @@
             <!-- Дата возврата -->
             <div class="mb-3">
                 <label for="returnDate" class="form-label">Дата возврата</label>
-                <input type="date" name="returnDate" required >
+                <input type="date" id="returnDate" name="returnDate" required>
             </div>
 
             <!-- Кнопка -->
@@ -39,4 +39,11 @@
             <span style="color: red">${errorMessage}</span>
         </#if>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const today = new Date().toISOString().split("T")[0];
+            document.getElementById("returnDate").setAttribute("min", today);
+        });
+    </script>
 </@main.layout>

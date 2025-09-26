@@ -69,4 +69,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByPassportNumber(passportNumber)
                 .orElseThrow(UserNotFoundException::new);
     }
+
+
 }

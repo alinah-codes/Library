@@ -27,12 +27,12 @@ public class RequestServiceImpl implements RequestService {
         User user = userRepository.findByTicketNumber(bookRequestDto.getTicketNumber())
                 .orElseThrow(() -> new IllegalArgumentException("Некорректный номер билета"));
 
-        long activeRequests = requestRepository.countByUserIdAndStatus(user.getId(), LoanStatus.EXPECTED);
+        long activeRequests = requestRepository.countByUserIdAndStatus(user.getId(), LoanStatus.ОЖИДАЕТСЯ);
 
         if (activeRequests >= 3) {
             throw new IllegalStateException("Нельзя взять более трёх книг одновременно");
         }
-        boolean exists = requestRepository.existsByBook_IdAndStatus(bookRequestDto.getBookId(), LoanStatus.EXPECTED);
+        boolean exists = requestRepository.existsByBook_IdAndStatus(bookRequestDto.getBookId(), LoanStatus.ОЖИДАЕТСЯ);
         if (exists) {
             throw new IllegalStateException("Книга уже выдана");
         }
@@ -45,14 +45,38 @@ public class RequestServiceImpl implements RequestService {
         request.setBook(book);
         request.setCreated(LocalDate.now());
         request.setReturnDate(bookRequestDto.getReturnDate());
-        request.setStatus(LoanStatus.EXPECTED);
+        request.setStatus(LoanStatus.ОЖИДАЕТСЯ);
 
         requestRepository.save(request);
     }
 
     @Override
     public List<Request> findActiveRequestsByUser(User user) {
-        return requestRepository.findByUserAndStatus(user, LoanStatus.EXPECTED);
+        return requestRepository.findByUserAndStatus(user, LoanStatus.ОЖИДАЕТСЯ);
     }
+
+    @Override
+    public List<Request> findAllByUser(User user) {
+        return requestRepository.findByUser(user);
+    }
+
+    @Override
+    public void returnBook(User user, Long bookId) {
+        Request request = requestRepository
+                .findByUserAndBook_IdAndStatus(user, bookId, LoanStatus.ОЖИДАЕТСЯ)
+                .orElseThrow(() -> new IllegalArgumentException("Активная заявка не найдена"));
+
+        request.setRealReturnDate(LocalDate.now());
+        request.setStatus(LoanStatus.ВОЗВРАЩЕНО);
+        requestRepository.save(request);
+    }
+
+
+    @Override
+    public List<Request> findRequestsByUserAndDateRange(User user, LocalDate from, LocalDate to) {
+        return requestRepository.findByUserAndCreatedBetween(user, from, to);
+    }
+
+
 
 }

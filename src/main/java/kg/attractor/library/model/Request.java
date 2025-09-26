@@ -30,6 +30,12 @@ public class Request {
     @Column(name = "real_return_date")
     private LocalDate realReturnDate;
 
+
+
     @Enumerated(EnumType.STRING)
     private LoanStatus status;
+
+    public boolean isOverdue() {
+        return returnDate != null && returnDate.isBefore(LocalDate.now());
+    }
 }

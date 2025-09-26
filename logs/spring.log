@@ -17687,3 +17687,1660 @@ insert into request (book_id,created,real_return_date,return_date,status,user_id
 2025-09-26 18:21:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2025-09-26 18:21:03 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 14.848 seconds (process running for 16.999)
 2025-09-26 18:23:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 18:43:43 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 18:43:43 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 18:43:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:43:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 18:43:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 18:43:54 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 11704 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 18:43:54 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 18:43:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 18:43:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2025-09-26 18:43:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 18:43:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 18:43:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 18:43:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 18:43:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1854 ms
+2025-09-26 18:43:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 18:43:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 18:43:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 18:43:56 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:43:57 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 18:43:57 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:43:57 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 18:43:57 INFO  liquibase.util - Run:                          0
+2025-09-26 18:43:57 INFO  liquibase.util - Previously run:               6
+2025-09-26 18:43:57 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 18:43:57 INFO  liquibase.util - -------------------------------
+2025-09-26 18:43:57 INFO  liquibase.util - Total change sets:            6
+2025-09-26 18:43:57 INFO  liquibase.util - Update summary generated
+2025-09-26 18:43:57 INFO  liquibase.command - Command execution complete
+2025-09-26 18:43:57 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 18:43:57 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 18:43:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 18:43:58 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 18:43:58 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 18:43:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 18:43:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:44:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 18:44:00 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 18:44:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 18:44:01 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.307 seconds (process running for 9.967)
+2025-09-26 18:44:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 18:44:37 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.context.ApplicationContextException: Failed to parse [profile/profile.ftlh]] with root cause
+freemarker.core.ParseException: Syntax error in template "profile/profile.ftlh" in line 69, column 49:
+Unknown built-in: "is_after". Help (latest version): https://freemarker.apache.org/docs/ref_builtins.html; you're using FreeMarker 2.3.34.
+The alphabetical list of built-ins:
+abs, absolute_template_name, ancestors, api, 
+blank_to_null, boolean, byte, 
+c, c_lower_case, c_upper_case, cap_first, capitalize, ceiling, children, chop_linebreak, chunk, cn, contains, counter, 
+date, date_if_unknown, datetime, datetime_if_unknown, default, double, drop_while, 
+empty_to_null, ends_with, ensure_ends_with, ensure_starts_with, esc, eval, eval_json, exists, 
+filter, first, float, floor, 
+groups, 
+has_api, has_content, has_next, html, 
+if_exists, index, index_of, int, interpret, is_boolean, is_collection, is_collection_ex, is_date, is_date_like, is_date_only, is_datetime, is_directive, is_enumerable, is_even_item, is_first, is_hash, is_hash_ex, is_indexable, is_infinite, is_last, is_macro, is_markup_output, is_method, is_nan, is_node, is_number, is_odd_item, is_sequence, is_string, is_time, is_transform, is_unknown_date_like, iso, iso_h, iso_h_nz, iso_local, iso_local_h, iso_local_h_nz, iso_local_m, iso_local_m_nz, iso_local_ms, iso_local_ms_nz, iso_local_nz, iso_m, iso_m_nz, iso_ms, iso_ms_nz, iso_nz, iso_utc, iso_utc_fz, iso_utc_h, iso_utc_h_nz, iso_utc_m, iso_utc_m_nz, iso_utc_ms, iso_utc_ms_nz, iso_utc_nz, item_cycle, item_parity, item_parity_cap, 
+j_string, join, js_string, json_string, 
+keep_after, keep_after_last, keep_before, keep_before_last, keys, 
+last, last_index_of, left_pad, length, long, lower_abc, lower_case, 
+map, markup_string, matches, max, min, 
+namespace, new, next_sibling, no_esc, node_name, node_namespace, node_type, number, number_to_date, number_to_datetime, number_to_time, 
+parent, previous_sibling, 
+remove_beginning, remove_ending, replace, reverse, right_pad, root, round, rtf, 
+seq_contains, seq_index_of, seq_last_index_of, sequence, short, size, sort, sort_by, split, starts_with, string, substring, switch, 
+take_while, then, time, time_if_unknown, trim, trim_to_null, truncate, truncate_c, truncate_c_m, truncate_m, truncate_w, truncate_w_m, 
+uncap_first, upper_abc, upper_case, url, url_path, 
+values, 
+web_safe, with_args, with_args_last, word_list, 
+xhtml, xml
+	at freemarker.core.BuiltIn.newBuiltIn(BuiltIn.java:394)
+	at freemarker.core.FMParser.BuiltIn(FMParser.java:1211)
+	at freemarker.core.FMParser.PrimaryExpression(FMParser.java:605)
+	at freemarker.core.FMParser.UnaryExpression(FMParser.java:717)
+	at freemarker.core.FMParser.MultiplicativeExpression(FMParser.java:832)
+	at freemarker.core.FMParser.AdditiveExpression(FMParser.java:784)
+	at freemarker.core.FMParser.RangeExpression(FMParser.java:960)
+	at freemarker.core.FMParser.RelationalExpression(FMParser.java:912)
+	at freemarker.core.FMParser.EqualityExpression(FMParser.java:875)
+	at freemarker.core.FMParser.AndExpression(FMParser.java:1027)
+	at freemarker.core.FMParser.OrExpression(FMParser.java:1049)
+	at freemarker.core.FMParser.Expression(FMParser.java:562)
+	at freemarker.core.FMParser.If(FMParser.java:1833)
+	at freemarker.core.FMParser.FreemarkerDirective(FMParser.java:3727)
+	at freemarker.core.FMParser.MixedContentElements(FMParser.java:4117)
+	at freemarker.core.FMParser.List(FMParser.java:1938)
+	at freemarker.core.FMParser.FreemarkerDirective(FMParser.java:3731)
+	at freemarker.core.FMParser.MixedContentElements(FMParser.java:4117)
+	at freemarker.core.FMParser.UnifiedMacroTransform(FMParser.java:3034)
+	at freemarker.core.FMParser.FreemarkerDirective(FMParser.java:3762)
+	at freemarker.core.FMParser.MixedContentElements(FMParser.java:4117)
+	at freemarker.core.FMParser.Root(FMParser.java:4771)
+	at freemarker.template.Template.<init>(Template.java:252)
+	at freemarker.cache.TemplateCache.loadTemplate(TemplateCache.java:549)
+	at freemarker.cache.TemplateCache.getTemplateInternal(TemplateCache.java:440)
+	at freemarker.cache.TemplateCache.getTemplate(TemplateCache.java:293)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2982)
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2840)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.getTemplate(FreeMarkerView.java:424)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.checkResource(FreeMarkerView.java:276)
+	at org.springframework.web.servlet.view.UrlBasedViewResolver.loadView(UrlBasedViewResolver.java:554)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver.loadView(FreeMarkerViewResolver.java:110)
+	at org.springframework.web.servlet.view.AbstractCachingViewResolver.createView(AbstractCachingViewResolver.java:275)
+	at org.springframework.web.servlet.view.UrlBasedViewResolver.createView(UrlBasedViewResolver.java:493)
+	at org.springframework.web.servlet.view.AbstractCachingViewResolver.resolveViewName(AbstractCachingViewResolver.java:174)
+	at org.springframework.web.servlet.view.ContentNegotiatingViewResolver.getCandidateViews(ContentNegotiatingViewResolver.java:316)
+	at org.springframework.web.servlet.view.ContentNegotiatingViewResolver.resolveViewName(ContentNegotiatingViewResolver.java:229)
+	at org.springframework.web.servlet.DispatcherServlet.resolveViewNameInternal(DispatcherServlet.java:1484)
+	at org.springframework.web.servlet.DispatcherServlet.resolveViewName(DispatcherServlet.java:1477)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1410)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.ForceEagerSessionCreationFilter.doFilterInternal(ForceEagerSessionCreationFilter.java:45)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-09-26 18:49:38 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 18:49:38 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 18:49:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:49:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 18:49:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 18:49:48 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 11844 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 18:49:48 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 18:49:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 18:49:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2025-09-26 18:49:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 18:49:50 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 18:49:50 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 18:49:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 18:49:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1750 ms
+2025-09-26 18:49:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 18:49:50 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 18:49:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 18:49:50 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:49:51 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 18:49:51 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:49:51 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 18:49:51 INFO  liquibase.util - Run:                          0
+2025-09-26 18:49:51 INFO  liquibase.util - Previously run:               6
+2025-09-26 18:49:51 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 18:49:51 INFO  liquibase.util - -------------------------------
+2025-09-26 18:49:51 INFO  liquibase.util - Total change sets:            6
+2025-09-26 18:49:51 INFO  liquibase.util - Update summary generated
+2025-09-26 18:49:51 INFO  liquibase.command - Command execution complete
+2025-09-26 18:49:51 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 18:49:51 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 18:49:51 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 18:49:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 18:49:52 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 18:49:53 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 18:49:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:49:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 18:49:54 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 18:49:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 18:49:55 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.808 seconds (process running for 9.113)
+2025-09-26 18:50:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 18:50:18 ERROR freemarker.runtime - Error executing FreeMarker template
+freemarker.core.NonMethodException: For "...(...)" callee: Expected a method or function, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> req.created?string  [in template "profile/profile.ftlh" at line 20, column 27]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${req.created?string("dd.MM.yyyy")}  [in template "profile/profile.ftlh" at line 20, column 25]
+	~ Reached through: #nested spring  [in template "layout.ftlh" in macro "layout" at line 64, column 9]
+	~ Reached through: @main.layout; spring  [in template "profile/profile.ftlh" at line 2, column 1]
+----
+	at freemarker.core.MethodCall._eval(MethodCall.java:67)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:104)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:344)
+	at freemarker.core.Environment.visit(Environment.java:386)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:321)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:244)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:654)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:108)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:94)
+	at freemarker.core.Environment.visit(Environment.java:380)
+	at freemarker.core.Environment.invokeNestedContent(Environment.java:630)
+	at freemarker.core.BodyInstruction.accept(BodyInstruction.java:60)
+	at freemarker.core.Environment.visit(Environment.java:380)
+	at freemarker.core.Environment.invokeMacroOrFunctionCommonPart(Environment.java:886)
+	at freemarker.core.Environment.invokeMacro(Environment.java:822)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:344)
+	at freemarker.core.Environment.visit(Environment.java:350)
+	at freemarker.core.Environment.process(Environment.java:323)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:447)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:351)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:302)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:181)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.ForceEagerSessionCreationFilter.doFilterInternal(ForceEagerSessionCreationFilter.java:45)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-09-26 18:50:18 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: freemarker.core.NonMethodException: For "...(...)" callee: Expected a method or function, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> req.created?string  [in template "profile/profile.ftlh" at line 20, column 27]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${req.created?string("dd.MM.yyyy")}  [in template "profile/profile.ftlh" at line 20, column 25]
+	~ Reached through: #nested spring  [in template "layout.ftlh" in macro "layout" at line 64, column 9]
+	~ Reached through: @main.layout; spring  [in template "profile/profile.ftlh" at line 2, column 1]
+----] with root cause
+freemarker.core.NonMethodException: For "...(...)" callee: Expected a method or function, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> req.created?string  [in template "profile/profile.ftlh" at line 20, column 27]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${req.created?string("dd.MM.yyyy")}  [in template "profile/profile.ftlh" at line 20, column 25]
+	~ Reached through: #nested spring  [in template "layout.ftlh" in macro "layout" at line 64, column 9]
+	~ Reached through: @main.layout; spring  [in template "profile/profile.ftlh" at line 2, column 1]
+----
+	at freemarker.core.MethodCall._eval(MethodCall.java:67)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:104)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:344)
+	at freemarker.core.Environment.visit(Environment.java:386)
+	at freemarker.core.IteratorBlock$IterationContext.executedNestedContentForCollOrSeqListing(IteratorBlock.java:321)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedContent(IteratorBlock.java:271)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:244)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:654)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:108)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:94)
+	at freemarker.core.Environment.visit(Environment.java:380)
+	at freemarker.core.Environment.invokeNestedContent(Environment.java:630)
+	at freemarker.core.BodyInstruction.accept(BodyInstruction.java:60)
+	at freemarker.core.Environment.visit(Environment.java:380)
+	at freemarker.core.Environment.invokeMacroOrFunctionCommonPart(Environment.java:886)
+	at freemarker.core.Environment.invokeMacro(Environment.java:822)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:344)
+	at freemarker.core.Environment.visit(Environment.java:350)
+	at freemarker.core.Environment.process(Environment.java:323)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:447)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:351)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:302)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:181)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.ForceEagerSessionCreationFilter.doFilterInternal(ForceEagerSessionCreationFilter.java:45)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-09-26 18:50:18 ERROR o.s.b.a.w.s.e.ErrorMvcAutoConfiguration$StaticView - Cannot render error page for request [/profile] as the response has already been committed. As a result, the response may have the wrong status code.
+2025-09-26 18:51:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 18:51:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 18:51:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:51:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 18:51:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 18:51:06 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 11875 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 18:51:06 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 18:51:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 18:51:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 6 JPA repository interfaces.
+2025-09-26 18:51:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 18:51:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 18:51:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 18:51:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 18:51:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2213 ms
+2025-09-26 18:51:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 18:51:09 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 18:51:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 18:51:09 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 18:51:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 18:51:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 18:51:10 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 18:51:10 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 18:51:10 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 18:51:10 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 18:51:10 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:51:10 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 18:51:10 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:51:10 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 18:51:10 INFO  liquibase.util - Run:                          0
+2025-09-26 18:51:10 INFO  liquibase.util - Previously run:               6
+2025-09-26 18:51:10 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 18:51:10 INFO  liquibase.util - -------------------------------
+2025-09-26 18:51:10 INFO  liquibase.util - Total change sets:            6
+2025-09-26 18:51:10 INFO  liquibase.util - Update summary generated
+2025-09-26 18:51:10 INFO  liquibase.command - Command execution complete
+2025-09-26 18:51:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 18:51:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 18:51:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 18:51:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 18:51:11 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 18:51:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 18:51:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:51:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 18:51:13 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 18:51:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 18:51:14 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 9.513 seconds (process running for 11.403)
+2025-09-26 18:51:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 18:53:28 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 18:53:28 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 18:53:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:53:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 18:53:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 18:53:34 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 11935 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 18:53:34 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 18:53:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 18:53:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 6 JPA repository interfaces.
+2025-09-26 18:53:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 18:53:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 18:53:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 18:53:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 18:53:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1898 ms
+2025-09-26 18:53:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 18:53:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 18:53:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 18:53:37 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 18:53:37 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:53:38 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 18:53:38 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 18:53:38 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 18:53:38 INFO  liquibase.util - Run:                          0
+2025-09-26 18:53:38 INFO  liquibase.util - Previously run:               6
+2025-09-26 18:53:38 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 18:53:38 INFO  liquibase.util - -------------------------------
+2025-09-26 18:53:38 INFO  liquibase.util - Total change sets:            6
+2025-09-26 18:53:38 INFO  liquibase.util - Update summary generated
+2025-09-26 18:53:38 INFO  liquibase.command - Command execution complete
+2025-09-26 18:53:38 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 18:53:38 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 18:53:38 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 18:53:39 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 18:53:39 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 18:53:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 18:53:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 18:53:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 18:53:42 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 18:53:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 18:53:42 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 10.822 seconds (process running for 12.34)
+2025-09-26 18:53:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:04:18 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:04:18 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:04:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:04:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:04:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:04:24 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12173 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:04:24 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:04:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:04:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:04:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:04:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:04:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:04:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:04:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1739 ms
+2025-09-26 19:04:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:04:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:04:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:04:27 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:04:27 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:04:28 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:04:28 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:04:28 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:04:28 INFO  liquibase.util - Run:                          0
+2025-09-26 19:04:28 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:04:28 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:04:28 INFO  liquibase.util - -------------------------------
+2025-09-26 19:04:28 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:04:28 INFO  liquibase.util - Update summary generated
+2025-09-26 19:04:28 INFO  liquibase.command - Command execution complete
+2025-09-26 19:04:28 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:04:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:04:28 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:04:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:04:28 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:04:30 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:04:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:04:30 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:04:30 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:04:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:04:31 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.571 seconds (process running for 10.375)
+2025-09-26 19:04:45 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:04:45 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:04:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:04:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:04:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:04:49 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12185 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:04:49 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:04:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:04:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:04:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:04:51 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:04:51 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:04:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:04:51 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1615 ms
+2025-09-26 19:04:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:04:51 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:04:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:04:52 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:04:52 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:04:52 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:04:52 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:04:52 INFO  liquibase.util - Run:                          0
+2025-09-26 19:04:52 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:04:52 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:04:52 INFO  liquibase.util - -------------------------------
+2025-09-26 19:04:52 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:04:52 INFO  liquibase.util - Update summary generated
+2025-09-26 19:04:52 INFO  liquibase.command - Command execution complete
+2025-09-26 19:04:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:04:52 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:04:53 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:04:53 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:04:53 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:04:55 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:04:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:04:55 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:04:55 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:04:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:04:56 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.808 seconds (process running for 8.951)
+2025-09-26 19:05:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:08:44 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:08:44 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:08:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:08:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:08:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:08:53 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12288 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:08:53 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:08:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:08:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:08:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:08:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:08:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:08:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:08:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1724 ms
+2025-09-26 19:08:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:08:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:08:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:08:56 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:08:56 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:08:57 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:08:57 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:08:57 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:08:57 INFO  liquibase.util - Run:                          0
+2025-09-26 19:08:57 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:08:57 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:08:57 INFO  liquibase.util - -------------------------------
+2025-09-26 19:08:57 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:08:57 INFO  liquibase.util - Update summary generated
+2025-09-26 19:08:57 INFO  liquibase.command - Command execution complete
+2025-09-26 19:08:57 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:08:57 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:08:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:08:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:08:57 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:08:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:08:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:08:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:08:59 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:09:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:09:00 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.338 seconds (process running for 8.386)
+2025-09-26 19:09:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:10:36 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:10:37 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:10:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:10:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:10:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:10:42 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12356 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:10:42 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:10:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:10:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:10:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:10:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:10:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:10:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:10:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1803 ms
+2025-09-26 19:10:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:10:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:10:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:10:45 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:10:45 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:10:46 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:10:46 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:10:46 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:10:46 INFO  liquibase.util - Run:                          0
+2025-09-26 19:10:46 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:10:46 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:10:46 INFO  liquibase.util - -------------------------------
+2025-09-26 19:10:46 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:10:46 INFO  liquibase.util - Update summary generated
+2025-09-26 19:10:46 INFO  liquibase.command - Command execution complete
+2025-09-26 19:10:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:10:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:10:46 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:10:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:10:46 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:10:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:10:48 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:10:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:10:49 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:10:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:10:49 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.987 seconds (process running for 9.109)
+2025-09-26 19:10:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:11:39 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:11:39 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:11:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:11:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:11:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:11:44 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12380 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:11:44 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:11:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:11:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:11:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:11:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:11:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:11:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:11:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2094 ms
+2025-09-26 19:11:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:11:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:11:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:11:47 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:11:47 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:11:47 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:11:47 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:11:47 INFO  liquibase.util - Run:                          0
+2025-09-26 19:11:47 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:11:47 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:11:47 INFO  liquibase.util - -------------------------------
+2025-09-26 19:11:47 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:11:47 INFO  liquibase.util - Update summary generated
+2025-09-26 19:11:47 INFO  liquibase.command - Command execution complete
+2025-09-26 19:11:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:11:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:11:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:11:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:11:48 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:11:50 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:11:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:11:50 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:11:51 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:11:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:11:51 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.46 seconds (process running for 10.009)
+2025-09-26 19:11:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:23:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:23:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:23:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:23:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:23:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:23:12 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12624 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:23:12 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:23:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:23:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:23:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:23:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:23:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:23:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:23:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2076 ms
+2025-09-26 19:23:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:23:14 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:23:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:23:14 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:23:15 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:23:15 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:23:15 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:23:15 INFO  liquibase.util - Run:                          0
+2025-09-26 19:23:15 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:23:15 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:23:15 INFO  liquibase.util - -------------------------------
+2025-09-26 19:23:15 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:23:15 INFO  liquibase.util - Update summary generated
+2025-09-26 19:23:15 INFO  liquibase.command - Command execution complete
+2025-09-26 19:23:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:23:15 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:23:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:23:16 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:23:16 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:23:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:23:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:23:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:23:18 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:23:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:23:18 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.796 seconds (process running for 9.11)
+2025-09-26 19:23:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:34:49 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:34:49 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:34:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:34:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:34:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:34:57 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12863 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:34:57 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:34:58 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:34:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:34:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:34:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:34:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:35:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:35:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2235 ms
+2025-09-26 19:35:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:35:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:35:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:35:00 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:35:00 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:35:00 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:35:00 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:35:00 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:35:00 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:35:00 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:35:01 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:35:01 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:35:01 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:35:01 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:35:01 INFO  liquibase.util - Run:                          0
+2025-09-26 19:35:01 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:35:01 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:35:01 INFO  liquibase.util - -------------------------------
+2025-09-26 19:35:01 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:35:01 INFO  liquibase.util - Update summary generated
+2025-09-26 19:35:01 INFO  liquibase.command - Command execution complete
+2025-09-26 19:35:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:35:01 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:35:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:35:02 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:35:02 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:35:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:35:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:35:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:35:04 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:35:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:35:04 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.527 seconds (process running for 10.215)
+2025-09-26 19:35:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:35:44 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Активная заявка не найдена] with root cause
+java.lang.IllegalArgumentException: Активная заявка не найдена
+	at kg.attractor.library.service.impl.RequestServiceImpl.lambda$returnBook$2(RequestServiceImpl.java:67)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at kg.attractor.library.service.impl.RequestServiceImpl.returnBook(RequestServiceImpl.java:67)
+	at kg.attractor.library.controller.RequestController.returnRequest(RequestController.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:134)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.ForceEagerSessionCreationFilter.doFilterInternal(ForceEagerSessionCreationFilter.java:45)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-09-26 19:37:50 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:37:50 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:37:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:37:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:37:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:37:53 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 12918 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:37:53 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:37:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:37:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:37:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:37:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:37:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:37:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:37:55 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1673 ms
+2025-09-26 19:37:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:37:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:37:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:37:56 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:37:56 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:37:56 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:37:56 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:37:56 INFO  liquibase.util - Run:                          0
+2025-09-26 19:37:56 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:37:56 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:37:56 INFO  liquibase.util - -------------------------------
+2025-09-26 19:37:56 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:37:56 INFO  liquibase.util - Update summary generated
+2025-09-26 19:37:56 INFO  liquibase.command - Command execution complete
+2025-09-26 19:37:56 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:37:57 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:37:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:37:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:37:57 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:37:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:37:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:37:59 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:38:00 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:38:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:38:00 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.715 seconds (process running for 8.993)
+2025-09-26 19:38:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:42:46 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:42:46 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:42:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:42:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:42:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:42:51 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13012 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:42:51 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:42:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:42:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:42:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:42:53 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:42:53 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:42:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:42:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1812 ms
+2025-09-26 19:42:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:42:53 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:42:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:42:53 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:42:53 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:42:53 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:42:53 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:42:53 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:42:53 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:42:53 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:42:54 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:42:54 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:42:54 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:42:54 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:42:54 INFO  liquibase.util - Run:                          0
+2025-09-26 19:42:54 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:42:54 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:42:54 INFO  liquibase.util - -------------------------------
+2025-09-26 19:42:54 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:42:54 INFO  liquibase.util - Update summary generated
+2025-09-26 19:42:54 INFO  liquibase.command - Command execution complete
+2025-09-26 19:42:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:42:54 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:42:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:42:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:42:55 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:42:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:42:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:42:57 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:42:57 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:42:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:42:58 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.025 seconds (process running for 9.342)
+2025-09-26 19:43:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:50:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:50:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:50:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:50:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:50:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:50:46 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13197 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:50:46 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:50:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:50:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:50:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:50:48 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:50:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:50:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:50:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2083 ms
+2025-09-26 19:50:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:50:49 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:50:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:50:49 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:50:49 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:50:49 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:50:49 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:50:49 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:50:49 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:50:49 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:50:50 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:50:50 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:50:50 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:50:50 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:50:50 INFO  liquibase.util - Run:                          0
+2025-09-26 19:50:50 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:50:50 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:50:50 INFO  liquibase.util - -------------------------------
+2025-09-26 19:50:50 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:50:50 INFO  liquibase.util - Update summary generated
+2025-09-26 19:50:50 INFO  liquibase.command - Command execution complete
+2025-09-26 19:50:50 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:50:50 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:50:50 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:50:51 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:50:51 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:50:52 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:50:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:50:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:50:53 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:50:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:50:54 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 9.636 seconds (process running for 12.002)
+2025-09-26 19:51:01 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:54:21 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:54:21 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:54:21 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:54:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:54:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:54:27 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13273 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:54:27 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:54:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:54:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:54:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:54:29 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:54:29 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:54:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:54:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1833 ms
+2025-09-26 19:54:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:54:30 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:54:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:54:30 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:54:30 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:54:31 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:54:31 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:54:31 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:54:31 INFO  liquibase.util - Run:                          0
+2025-09-26 19:54:31 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:54:31 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:54:31 INFO  liquibase.util - -------------------------------
+2025-09-26 19:54:31 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:54:31 INFO  liquibase.util - Update summary generated
+2025-09-26 19:54:31 INFO  liquibase.command - Command execution complete
+2025-09-26 19:54:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:54:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:54:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:54:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:54:31 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:54:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:54:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:54:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:54:34 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:54:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:54:34 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 7.839 seconds (process running for 9.123)
+2025-09-26 19:54:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 19:57:24 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 19:57:24 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 19:57:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:57:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 19:57:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 19:57:30 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13336 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 19:57:30 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 19:57:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 19:57:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 6 JPA repository interfaces.
+2025-09-26 19:57:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 19:57:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 19:57:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 19:57:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 19:57:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3355 ms
+2025-09-26 19:57:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 19:57:34 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 19:57:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 19:57:34 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 19:57:34 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 19:57:34 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 19:57:34 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 19:57:34 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 19:57:34 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 19:57:34 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 19:57:35 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:57:35 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 19:57:35 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 19:57:35 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 19:57:35 INFO  liquibase.util - Run:                          0
+2025-09-26 19:57:35 INFO  liquibase.util - Previously run:               6
+2025-09-26 19:57:35 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 19:57:35 INFO  liquibase.util - -------------------------------
+2025-09-26 19:57:35 INFO  liquibase.util - Total change sets:            6
+2025-09-26 19:57:35 INFO  liquibase.util - Update summary generated
+2025-09-26 19:57:35 INFO  liquibase.command - Command execution complete
+2025-09-26 19:57:35 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 19:57:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 19:57:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 19:57:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 19:57:36 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 19:57:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 19:57:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 19:57:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 19:57:38 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 19:57:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 19:57:38 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 10.186 seconds (process running for 11.984)
+2025-09-26 19:57:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 20:07:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 20:07:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 20:07:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:07:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 20:07:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 20:07:42 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13518 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 20:07:42 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 20:07:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 20:07:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 6 JPA repository interfaces.
+2025-09-26 20:07:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 20:07:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 20:07:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 20:07:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 20:07:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2101 ms
+2025-09-26 20:07:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 20:07:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 20:07:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 20:07:44 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:07:45 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 20:07:45 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:07:45 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 20:07:45 INFO  liquibase.util - Run:                          0
+2025-09-26 20:07:45 INFO  liquibase.util - Previously run:               6
+2025-09-26 20:07:45 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 20:07:45 INFO  liquibase.util - -------------------------------
+2025-09-26 20:07:45 INFO  liquibase.util - Total change sets:            6
+2025-09-26 20:07:45 INFO  liquibase.util - Update summary generated
+2025-09-26 20:07:45 INFO  liquibase.command - Command execution complete
+2025-09-26 20:07:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 20:07:45 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 20:07:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 20:07:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 20:07:46 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 20:07:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 20:07:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:07:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 20:07:48 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 20:07:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 20:07:49 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.687 seconds (process running for 10.057)
+2025-09-26 20:08:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 20:11:58 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 20:11:58 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 20:11:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:11:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 20:11:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 20:12:06 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13630 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 20:12:06 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 20:12:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 20:12:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 6 JPA repository interfaces.
+2025-09-26 20:12:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 20:12:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 20:12:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 20:12:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 20:12:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1943 ms
+2025-09-26 20:12:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 20:12:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 20:12:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 20:12:09 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 20:12:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 20:12:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 20:12:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 20:12:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 20:12:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 20:12:09 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 20:12:10 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:12:10 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 20:12:10 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:12:10 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 20:12:10 INFO  liquibase.util - Run:                          0
+2025-09-26 20:12:10 INFO  liquibase.util - Previously run:               6
+2025-09-26 20:12:10 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 20:12:10 INFO  liquibase.util - -------------------------------
+2025-09-26 20:12:10 INFO  liquibase.util - Total change sets:            6
+2025-09-26 20:12:10 INFO  liquibase.util - Update summary generated
+2025-09-26 20:12:10 INFO  liquibase.command - Command execution complete
+2025-09-26 20:12:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 20:12:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 20:12:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 20:12:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 20:12:11 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 20:12:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 20:12:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:12:13 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-26 20:12:14 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 20:12:15 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 20:12:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 20:12:15 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 10.9 seconds (process running for 12.212)
+2025-09-26 20:12:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 20:21:46 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 20:21:46 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 20:21:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:21:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 20:21:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 20:21:54 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13815 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 20:21:54 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 20:21:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 20:21:56 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 6 JPA repository interfaces.
+2025-09-26 20:21:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 20:21:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 20:21:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 20:21:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 20:21:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2360 ms
+2025-09-26 20:21:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 20:21:57 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 20:21:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 20:21:57 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:21:58 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 20:21:58 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:21:58 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 20:21:58 INFO  liquibase.util - Run:                          0
+2025-09-26 20:21:58 INFO  liquibase.util - Previously run:               6
+2025-09-26 20:21:58 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 20:21:58 INFO  liquibase.util - -------------------------------
+2025-09-26 20:21:58 INFO  liquibase.util - Total change sets:            6
+2025-09-26 20:21:58 INFO  liquibase.util - Update summary generated
+2025-09-26 20:21:58 INFO  liquibase.command - Command execution complete
+2025-09-26 20:21:58 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 20:21:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 20:21:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 20:21:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 20:21:59 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 20:22:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 20:22:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:22:01 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 20:22:01 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 20:22:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 20:22:02 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 8.524 seconds (process running for 9.806)
+2025-09-26 20:22:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-26 20:26:26 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-26 20:26:26 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-26 20:26:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:26:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-26 20:26:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-26 20:26:35 INFO  k.a.library.LibraryApplication - Starting LibraryApplication using Java 17.0.12 with PID 13909 (/Users/magnus/Desktop/Attractor/Library/target/classes started by magnus in /Users/magnus/Desktop/Attractor/Library)
+2025-09-26 20:26:35 INFO  k.a.library.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-26 20:26:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-26 20:26:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 6 JPA repository interfaces.
+2025-09-26 20:26:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-26 20:26:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-26 20:26:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-26 20:26:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-26 20:26:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2078 ms
+2025-09-26 20:26:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-26 20:26:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:./db/Library user=ROOT
+2025-09-26 20:26:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-26 20:26:37 INFO  liquibase.database - Set default schema name to PUBLIC
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/001_create_tables.yaml
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/002_create_authorities.yaml
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/003_alter_roles_table.yaml
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/004_alter_user_table.yaml
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/005_insert_auth_data.yaml
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading resource: db/changelog/migrations/006_insert_tables.yaml
+2025-09-26 20:26:38 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:26:39 INFO  liquibase.ui - Database is up to date, no changesets to execute
+2025-09-26 20:26:39 INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2025-09-26 20:26:39 INFO  liquibase.util - UPDATE SUMMARY
+2025-09-26 20:26:39 INFO  liquibase.util - Run:                          0
+2025-09-26 20:26:39 INFO  liquibase.util - Previously run:               6
+2025-09-26 20:26:39 INFO  liquibase.util - Filtered out:                 0
+2025-09-26 20:26:39 INFO  liquibase.util - -------------------------------
+2025-09-26 20:26:39 INFO  liquibase.util - Total change sets:            6
+2025-09-26 20:26:39 INFO  liquibase.util - Update summary generated
+2025-09-26 20:26:39 INFO  liquibase.command - Command execution complete
+2025-09-26 20:26:39 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-26 20:26:39 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-09-26 20:26:39 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-26 20:26:39 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-26 20:26:39 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-26 20:26:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-26 20:26:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-26 20:26:41 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-26 20:26:42 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-09-26 20:26:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-26 20:26:42 INFO  k.a.library.LibraryApplication - Started LibraryApplication in 9.638 seconds (process running for 11.206)
