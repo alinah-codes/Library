@@ -30,6 +30,8 @@ public class User implements UserDetails {
     @JoinColumn(name = "role_id")
     private Role role;
 
+    private boolean enabled = true;
+
     @OneToMany(mappedBy = "user")
     private List<Request> requests;
 
@@ -56,6 +58,6 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return enabled;
     }
 }

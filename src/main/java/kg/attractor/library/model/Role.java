@@ -1,9 +1,6 @@
 package kg.attractor.library.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,6 +15,10 @@ public class Role {
     private long id;
 
     private String roleName;
+
+    @ManyToOne
+    @JoinColumn(name = "authority_id")
+    private Authority authority;
 
     @OneToMany(mappedBy = "role")
     private List<User> users;

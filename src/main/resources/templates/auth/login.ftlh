@@ -17,11 +17,11 @@
                                        value="${(_csrf.token)!'csrf-token'}"/>
                             </#if>
 
-                            <!-- Email input -->
+                            <!-- Password number input -->
                             <div class="form-outline mb-4">
-                                <input type="email" id="form2Example1" class="form-control" name="username" required/>
+                                <input type="text" id="form2Example1" class="form-control" name="username" required/>
                                 <label class="form-label" for="form2Example1">
-                                    Mail
+                                    Номер паспорта
                                 </label>
                             </div>
 
@@ -29,24 +29,24 @@
                             <div class="form-outline mb-4">
                                 <input type="password" id="form2Example2" class="form-control" name="password" required/>
                                 <label class="form-label" for="form2Example2">
-                                    Password
+                                    Пароль
                                 </label>
                             </div>
 
                             <!-- Submit button -->
                             <button type="submit"
                                     class="btn btn-primary btn-block mb-4">
-                                Login
+                                Войти
                             </button>
 
                             <div>
                                 <a href="/auth/forgot-password">
-                                    Forgot your password?
+                                    Забыли пароль?
                                 </a>
                             </div>
                         </form>
                         <#if errorMessage??>
-                            Wrong username or password
+                            Неправильный пароль и логин
                         </#if>
                     </div>
                 </div>

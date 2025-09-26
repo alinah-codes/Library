@@ -1,40 +1,28 @@
 databaseChangeLog:
   - changeSet:
-      id: 002_insert_initial_data
+      id: 006_insert_initial_data
       author: A-K-I-V-I
       changes:
-        # --- Роли ---
-        - insert:
-            tableName: roles
-            columns:
-              - column: { name: id, valueNumeric: 1 }
-              - column: { name: role_name, value: "ADMIN" }
-        - insert:
-            tableName: roles
-            columns:
-              - column: { name: id, valueNumeric: 2 }
-              - column: { name: role_name, value: "READER" }
+
 
         # --- Пользователи ---
         - insert:
             tableName: users
             columns:
-              - column: { name: id, valueNumeric: 1 }
               - column: { name: full_name, value: "Admin User" }
               - column: { name: address, value: "Bishkek" }
               - column: { name: passport_number, value: "AA1234567" }
               - column: { name: ticket_number, value: "TICKET-001" }
-              - column: { name: password, value: "{noop}admin123" }
+              - column: { name: password, value: "$2a$12$WB2YUbFcCN0tm44SBcKUjua9yiFBsfB3vW02IjuwzY7HGtlQIKzy2" }
               - column: { name: role_id, valueNumeric: 1 }
         - insert:
             tableName: users
             columns:
-              - column: { name: id, valueNumeric: 2 }
               - column: { name: full_name, value: "Reader User" }
               - column: { name: address, value: "Osh" }
               - column: { name: passport_number, value: "BB7654321" }
               - column: { name: ticket_number, value: "TICKET-002" }
-              - column: { name: password, value: "{noop}reader123" }
+              - column: { name: password, value: "$2a$12$WB2YUbFcCN0tm44SBcKUjua9yiFBsfB3vW02IjuwzY7HGtlQIKzy2" }
               - column: { name: role_id, valueNumeric: 2 }
 
         - insert:

@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 005_insert_auth_data
+      author: a-k-i-v-i
+      changes:
+        - sql:
+            comment: insert default authorities
+            sql: |
+              insert into authorities(authority)
+              values('ADMIN_PERMISSION'), ('READER_PERMISSION')
+        - sql:
+            comment: insert default roles
+            sql: |
+              insert into roles(role_name, authority_id)
+              values('ADMIN', (select id from authorities where authority = 'ADMIN_PERMISSION')),
+              ('READER', (select id from authorities where authority = 'READER_PERMISSION'));

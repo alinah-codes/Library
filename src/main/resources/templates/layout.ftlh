@@ -31,33 +31,31 @@
                 <a class="nav-link" href="/">Мои книги</a>
 
             </div>
-
-<#--            <#assign known = SPRING_SECURITY_CONTEXT?? >-->
-<#--            <#if known>-->
-<#--                <#assign-->
-<#--                user = SPRING_SECURITY_CONTEXT.authentication.principal-->
-<#--                name = user.getUsername()-->
-<#--                >-->
-<#--                <#if user??>-->
-<#--                    <a href="/profile"><i class="bi bi-person-circle text-white fs-3" style="margin: 0 1px 0 8px; cursor: pointer;" ></i></a>-->
-<#--                    <form action="/logout" method="post">-->
-<#--                        <#if _csrf??>-->
-<#--                            <input type="hidden" name="${(_csrf.parameterName)!'csrf-param-name'}"-->
-<#--                                   value="${(_csrf.token)!'csrf-token'}"/>-->
-<#--                        </#if>-->
-<#--                        <button type="submit" class="btn btn-outline-info m-2"-->
-<#--                                id="logout">-->
-<#--                            <@spring.message "layout.logout"/>-->
-<#--                        </button>-->
-<#--                    </form>-->
-<#--                </#if>-->
-<#--            <#else>-->
+            <#assign known = SPRING_SECURITY_CONTEXT?? >
+            <#if known>
+                <#assign
+                user = SPRING_SECURITY_CONTEXT.authentication.principal
+                name = user.getUsername()
+                >
+                <#if user??>
+                    <a href="/profile"><i class="bi bi-person-circle text-white fs-3" style="margin: 0 1px 0 8px; cursor: pointer;" ></i></a>
+                    <form action="/logout" method="post">
+                        <#if _csrf??>
+                            <input type="hidden" name="${(_csrf.parameterName)!'csrf-param-name'}"
+                                   value="${(_csrf.token)!'csrf-token'}"/>
+                        </#if>
+                        <button type="submit" class="btn btn-outline-info m-2"
+                                id="logout">
+                           Выйти
+                        </button>
+                    </form>
+                </#if>
+            <#else>
                 <a href="/login"
                    class="btn btn-outline-info m-2">Авторизация</a>
                 <a href="/auth/register"
                    class="btn btn-outline-info m-2">Регистрация</a>
-<#--            </#if>-->
-
+            </#if>
         </div>
     </nav>
 

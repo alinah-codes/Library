@@ -1,7 +1,12 @@
 <#import "layout.ftlh" as main>
 <#import "./macros/pagination.ftlh" as p>
 <@main.layout ; spring>
-
+    <#if successMessage??>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            ${successMessage}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </#if>
     <div style="display: flex">
 
         <div class="sidebar"
@@ -58,8 +63,8 @@
 
             items.forEach(item => {
                 item.addEventListener("click", () => {
-                    items.forEach(el => el.classList.remove("active")); // убрать у всех
-                    item.classList.add("active"); // добавить выбранному
+                    items.forEach(el => el.classList.remove("active"));
+                    item.classList.add("active");
                 });
             });
         });

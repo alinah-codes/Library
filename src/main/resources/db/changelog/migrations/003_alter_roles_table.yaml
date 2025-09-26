@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003_alter_roles_table
+      author: admin
+      changes:
+        - addColumn:
+            tableName: roles
+            columns:
+              - column:
+                  name: authority_id
+                  type: long
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_role_authority_id
+                    references: authorities(id)
